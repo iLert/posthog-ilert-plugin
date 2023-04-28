@@ -1,23 +1,24 @@
 {
-  "name": "posthog-ilert-plugin",
-  "version": "0.0.1",
-  "description": "Create alerts in ilert based on a Posthog trend graph",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DaTiMy/posthog-test.git"
-  },
-  "keywords": [
-    "posthog",
-    "ilert"
-  ],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DaTiMy/posthog-test/issues"
-  },
-  "homepage": "https://github.com/DaTiMy/posthog-test#readme",
-  "devDependencies": {
-    "@posthog/plugin-scaffold": "0.10.0"
+    "name": "posthog-ilert-plugin",
+    "version": "0.0.1",
+    "description": "Create alerts in ilert based on a PostHog trend graph",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/iLert/posthog-ilert-plugin.git"
+    },
+    "keywords": [
+      "posthog",
+      "ilert"
+    ],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/iLert/posthog-ilert-plugin/issues"
+    },
+    "homepage": "https://github.com/iLert/posthog-ilert-plugin#readme",
+    "devDependencies": {
+      "@posthog/plugin-scaffold": "0.10.0"
+    }
   }
-}
+  

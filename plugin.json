@@ -1,5 +1,5 @@
 {
-    "name": "Posthog ilert plugin",
+    "name": "PostHog ilert plugin",
     "url": "https://github.com/iLert/posthog-ilert-plugin",
     "description": "This plugin retrieves a trends graph every minute and send an alert to ilert if it exceeds a predetermined threshold.",
     "main": "index.js",
@@ -15,23 +15,14 @@
             "required": true
         },
         {
-            "key": "ilertApiKey",
-            "hint": "Your personal ilert alertsource API key",
-            "name": "ilert API Key",
-            "type": "string",
-            "secret": true,
-            "default": "",
-            "required": true
-        },
-        {
             "key": "posthogProjectId",
-            "name": "Posthog Project ID",
+            "name": "PostHog Project ID",
             "type": "string",
             "required": true
         },
         {
             "key": "posthogTrendUrl",
-            "name": "Posthog Trend URL",
+            "name": "PostHog Trend URL",
             "type": "string",
             "required": true
         },
@@ -55,6 +46,15 @@
             "required": true
         },
         {
+            "key": "ilertApiKey",
+            "hint": "Your personal ilert alertsource API key",
+            "name": "ilert API Key",
+            "type": "string",
+            "secret": true,
+            "default": "",
+            "required": true
+        },
+        {
             "key": "ilertAlertSummary",
             "name": "ilert alert Summary",
             "type": "string",
@@ -70,4 +70,3 @@
         }
     ]
   }
-  
