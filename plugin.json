@@ -1,0 +1,73 @@
+{
+    "name": "Posthog ilert plugin",
+    "url": "https://github.com/iLert/posthog-ilert-plugin",
+    "description": "This plugin retrieves a trends graph every minute and send an alert to ilert if it exceeds a predetermined threshold.",
+    "main": "index.js",
+    "posthogVersion": ">=1.26.0",
+    "config": [
+        {
+            "key": "posthogApiKey",
+            "hint": "Your Personal API key. It is not the same as the Project API key",
+            "name": "PostHog API Key",
+            "type": "string",
+            "secret": true,
+            "default": "",
+            "required": true
+        },
+        {
+            "key": "ilertApiKey",
+            "hint": "Your personal ilert alertsource API key",
+            "name": "ilert API Key",
+            "type": "string",
+            "secret": true,
+            "default": "",
+            "required": true
+        },
+        {
+            "key": "posthogProjectId",
+            "name": "Posthog Project ID",
+            "type": "string",
+            "required": true
+        },
+        {
+            "key": "posthogTrendUrl",
+            "name": "Posthog Trend URL",
+            "type": "string",
+            "required": true
+        },
+        {
+            "key": "operator",
+            "name": "Comparison operation",
+            "type": "choice",
+            "default": "≤ Less than or equal",
+            "hint": "Plugin alerts if $last_datapoint ≤ threshold, otherwise if $last_datapoint ≥ threshold",
+            "choices": [
+                "≤ Less than or equal",
+                "≥ Greater than or equal"
+            ],
+            "required": true
+        },
+        {
+            "key": "threshold",
+            "name": "Threshold",
+            "type": "string",
+            "default": "0",
+            "required": true
+        },
+        {
+            "key": "ilertAlertSummary",
+            "name": "ilert alert Summary",
+            "type": "string",
+            "default": "Alert summary",
+            "required": true
+        },
+        {
+            "key": "ilertAlertDetails",
+            "name": "ilert alert Details",
+            "type": "string",
+            "default": "Alert details",
+            "required": true
+        }
+    ]
+  }
+  
