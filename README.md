@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-This plugin retrieves a trends graph every minute and send an alert to ilert if it exceeds a predetermined threshold.
+This plugin retrieves a trends graph every minute and sends an alert to ilert if it exceeds a predetermined threshold.
 
 ## Installation
 
